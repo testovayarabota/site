@@ -20,7 +20,13 @@
 
             <h6 class="card-category">
                 {% if msg %}
-                  <span class="text-danger">{{ msg | safe }}</span>
+        <div class="alert alert-primary">
+          <button type="button" aria-hidden="true" class="close" data-dismiss="alert" aria-label="Close">
+            <i class="tim-icons icon-simple-remove"></i>
+          </button>
+          <span>{{ msg | safe }}</span>
+         </div>
+									  
                 {% else %}
                   Complete your credentials
                 {% endif %}  
